@@ -46,12 +46,13 @@ const About = () => {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div ref={imageRef} className="opacity-0 -translate-x-8">
-            <div className="relative w-full max-h-[400px] flex items-center justify-center popup-card rounded-lg shadow-xl overflow-hidden bg-black">
-              <div className="h-full w-auto max-w-full object-contain flex items-center justify-center p-8">
-                <div className="w-48 h-48 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-6xl font-bold text-primary-foreground">
-                  PK
-                </div>
-              </div>
+            <div className="relative w-full max-h-[400px] flex items-center justify-center popup-card rounded-lg shadow-xl overflow-hidden bg-black h-[400px]">
+              {/* Replaced placeholder with the local image */}
+              <img 
+                src="/aboutme.png" 
+                alt="Piyush Kumar" 
+                className="w-full h-full object-cover"
+              />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent opacity-60" />
               <div className="absolute bottom-4 left-4 text-white">
                 <h3 className="text-2xl font-bold">Piyush Kumar</h3>

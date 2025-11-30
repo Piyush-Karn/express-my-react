@@ -10,11 +10,17 @@ import Education from '@/components/Education';
 import Experience from '@/components/Experience';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
+import TargetCursor from '@/components/react-bits/TargetCursor';
 
 const Index = () => {
   return (
     <>
       <Preloader />
+      <TargetCursor 
+        targetSelector="a, button, .project-card, .popup-card" 
+        spinDuration={4}
+        hoverDuration={0.2}
+      />
       <ThemeToggle />
       <ScrollProgress />
       <FloatingNav />
